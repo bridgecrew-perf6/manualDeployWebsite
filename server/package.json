@@ -5,9 +5,11 @@
   "main": "app.js",
   "scripts": {
     "start": "node app.js",
-    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client  npm run build --prefix client"
+    "heroku-postbuild": "NPM_CONFIG_PRODUCTION=false npm install --prefix client  npm run build --prefix client",
+    "build": "react-scripts build",
+    "dev": "webpack-dev-server"
   },
-  "author": "",
+  "author": "Mera-Adda",
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -27,7 +29,8 @@
     "razorpay": "^2.8.0",
     "react-bootstrap": "^2.0.2",
     "react-fontawesome": "^1.7.1",
-    "shortid": "^2.2.16"
+    "shortid": "^2.2.16",
+    "webpack-dev-server": "^4.7.2"
   },
   "devDependencies": {}
 }
